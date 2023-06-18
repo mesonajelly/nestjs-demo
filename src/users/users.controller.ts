@@ -9,8 +9,4 @@ export class UsersController {
   getMe(@GetUser() user) {
     return user;
   }
-
-  @UseGuards(JwtGuard)
-  @Patch('update')
-  
 }
